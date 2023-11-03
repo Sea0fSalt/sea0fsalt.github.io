@@ -1,38 +1,35 @@
-/* style.css */
-
-/* Styl dla tytułu h1 */
-h1 {
-    text-align: center;
+body {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.blue-text {
     color: #00ccff;
 }
 
-/* Styl dla akapitów p */
-p {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+.orange-text {
+    color: #ff9900;
+}
+
+p, h2, h3 {
     font-weight: 500;
 }
 
-/* Styl dla silniejszych elementów w akapitach */
-p strong {
+p strong, h2 strong, h3 strong {
     font-weight: bold;
 }
 
-/* Styl dla odnośników a */
 a {
     text-decoration: none;
     color: #ff9900;
 }
 
-/* Styl dla linii hr */
 hr {
     border: 1px solid #00ccff;
-}
-
-h2 {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
 }
