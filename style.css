@@ -30,3 +30,9 @@ a {
 hr {
     border: 1px solid #00ccff;
 }
+
+h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
