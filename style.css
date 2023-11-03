@@ -1,0 +1,36 @@
+/* style.css */
+
+/* Styl dla tytułu h1 */
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* Styl dla akapitów p */
+p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* Styl dla silniejszych elementów w akapitach */
+p strong {
+    font-weight: bold;
+}
+
+/* Styl dla odnośników a */
+a {
+    text-decoration: none;
+    color: #00ccff;
+}
+
+/* Styl dla linii hr */
+hr {
+    border: 1px solid #000;
+}
+
+/* Styl dla tekstu z przypisami */
+p small {
+    font-size: 12px;
+}
