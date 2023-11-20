@@ -1,44 +1,63 @@
-body {
+body, html {
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left;
+    margin-left: 20px;
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
+header nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-left: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
+    font-weight: bold;
 }
 
-main {
-    padding: 15px;
-    background-color: #f4f4f4;
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    background-color: #333;
+    color: white;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
-
