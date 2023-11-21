@@ -5,49 +5,40 @@ body, html {
     background-color: #f2f2f2;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-header {
-    background-color: #333;
+#sidebar {
+    background-color: #004d99;
     color: white;
-    padding: 10px 0;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    overflow: auto;
 }
 
-header h1 {
-    float: left;
-    margin-left: 20px;
-}
-
-header nav {
-    float: right;
-    margin-right: 20px;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
+#sidebar nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-header nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-header nav ul li a {
+#sidebar nav ul li a {
     color: white;
+    padding: 10px 15px;
     text-decoration: none;
-    font-weight: bold;
+    display: block;
 }
 
-section {
-    margin-bottom: 20px;
+#sidebar nav ul li a:hover {
+    background-color: #0066cc;
+}
+
+.content {
+    margin-left: 250px; /* Taka sama wartość jak szerokość sidebar */
+    padding: 20px;
+}
+
+.content section {
     background-color: #fff;
-    padding: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -55,7 +46,7 @@ section {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
+    background-color: #004d99;
     color: white;
     position: relative;
     bottom: 0;
