@@ -6,20 +6,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>SeaOfSalt Wiki</h1>
-            <nav>
-                <ul>
-                    <li><a href="#opis">Opis</a></li>
-                    <li><a href="#rozgrywka">Rozgrywka</a></li>
-                    <li><a href="#swiat">Świat</a></li>
-                    <!-- Dodatkowe linki -->
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="container">
+    <aside id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#opis">Opis</a></li>
+                <li><a href="#rozgrywka">Rozgrywka</a></li>
+                <li><a href="#swiat">Świat</a></li>
+                <!-- Dodatkowe linki -->
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="content">
         <section id="opis">
             <h2>Opis gry</h2>
             <!-- Treść -->
@@ -33,11 +31,10 @@
             <!-- Treść -->
         </section>
         <!-- Dodatkowe sekcje -->
-    </main>
+    </div>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2023 SeaOfSalt by QwertyCodePL</p>
-        </div>
+        <p>&copy; 2023 SeaOfSalt by QwertyCodePL</p>
     </footer>
     <script src="script.js"></script>
 </body>
