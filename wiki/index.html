@@ -6,36 +6,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <aside id="sidebar">
-        <nav>
+    <div class="sidebar">
+        <nav class="nav">
             <ul>
-                <li><a href="#opis">Opis</a></li>
-                <li><a href="#rozgrywka">Rozgrywka</a></li>
-                <li><a href="#swiat">Świat</a></li>
-                <!-- Dodatkowe linki -->
+                <li><a href="#opis" data-name="opis">Opis</a></li>
+                <li><a href="#rozgrywka" data-name="rozgrywka">Rozgrywka</a></li>
+                <li><a href="#swiat" data-name="swiat">Świat</a></li>
+                <!-- Pozostałe sekcje -->
             </ul>
         </nav>
-    </aside>
-
-    <div class="content">
-        <section id="opis">
-            <h2>Opis gry</h2>
-            <!-- Treść -->
-        </section>
-        <section id="rozgrywka">
-            <h2>Rozgrywka</h2>
-            <!-- Treść -->
-        </section>
-        <section id="swiat">
-            <h2>Świat gry</h2>
-            <!-- Treść -->
-        </section>
-        <!-- Dodatkowe sekcje -->
     </div>
-
-    <footer>
-        <p>&copy; 2023 SeaOfSalt by QwertyCodePL</p>
-    </footer>
+    <div class="main-content">
+        <header class="header">
+            <h1>SeaOfSalt Wiki</h1>
+        </header>
+        <article id="opis">
+            <!-- Treść dla 'Opis' -->
+        </article>
+        <article id="rozgrywka">
+            <!-- Treść dla 'Rozgrywka' -->
+        </article>
+        <article id="swiat">
+            <!-- Treść dla 'Świat' -->
+        </article>
+        <!-- Pozostałe sekcje -->
+        <footer class="footer">
+            <p>&copy; 2023 SeaOfSalt by QwertyCodePL</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
