@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #f2f2f2;
+    color: #333;
 }
 
 #sidebar {
@@ -11,12 +12,14 @@ body, html {
     width: 250px;
     height: 100vh;
     position: fixed;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #sidebar nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 #sidebar nav ul li a {
@@ -24,15 +27,17 @@ body, html {
     padding: 10px 15px;
     text-decoration: none;
     display: block;
+    transition: background-color 0.3s;
 }
 
-#sidebar nav ul li a:hover {
+#sidebar nav ul li a:hover, #sidebar nav ul li a.active {
     background-color: #0066cc;
 }
 
 .content {
-    margin-left: 250px; /* Taka sama wartość jak szerokość sidebar */
+    margin-left: 250px;
     padding: 20px;
+    padding-bottom: 60px; /* Dodatkowe miejsce na stopkę */
 }
 
 .content section {
@@ -48,7 +53,9 @@ footer {
     padding: 10px 0;
     background-color: #004d99;
     color: white;
-    position: relative;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 250px; /* Aby stopka zaczynała się tam, gdzie kończy sidebar */
+    right: 0;
+    z-index: 1000;
 }
